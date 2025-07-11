@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pubmed-paper-fetcher"
+version = "0.1.0"
+description = ""
+authors = ["Sri chaitra <chaitrapaladugula@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "papers_fetcher" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+biopython = "^1.85"
+pydantic = "^2.11.7"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "CLI:main"
