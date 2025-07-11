@@ -25,13 +25,17 @@ git clone https://github.com/Sri-chaitra/pubmed_paper_fetcher.git
 cd pubmed_paper_fetcher
 
 ## Install dependencies:
+
 poetry install
 
 ## Usage
+
 You can run the command-line tool using Poetry:
+
 poetry run get-papers-list "your query here"
 
 ##  Options
+
 -h, --help
 Show usage instructions.
 
@@ -42,16 +46,25 @@ Print debug information during execution.
 Save output to the specified CSV file (default: prints to console).
 
 ## Example
+
 Fetch papers about cancer immunotherapy, print debug info, and save results to results.csv:
+
 poetry run get-papers-list "cancer immunotherapy" -d -f results.csv
 
 ## Output CSV Columns
+
 The generated CSV will include:
+
 PubmedID: Unique identifier for the paper
+
 Title: Title of the paper
+
 Publication Date: Year of publication
+
 Non-academic Author(s): Authors affiliated with non-academic institutions
+
 Company Affiliation(s): Names of companies
+
 Corresponding Author Email: If available
 
 ## Project Structure
@@ -65,19 +78,32 @@ Corresponding Author Email: If available
 │   └── models.py           # Typed data models
 └── README.md               # This file
 
+
 ## Dependencies
+
 Biopython – For PubMed API access
+
 Pydantic – For data validation and typing
 
+
 ##  Development & Testing
+
 If you modify the project, reinstall dependencies:
+
 poetry install
 
+
 ## License
+
 MIT License
 
+
 ## Acknowledgments
+
 This project was built using:
+
 Python 3.9+
+
 Poetry for packaging
+
 GitHub for version control
