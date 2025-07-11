@@ -65,7 +65,9 @@ Company Affiliation(s): Names of companies
 
 Corresponding Author Email: If available
 
-## Project Structure
+## 🗂️ Project Structure
+
+```
 .
 ├── CLI.py                  # Entry point CLI script
 ├── pyproject.toml          # Poetry config
@@ -75,7 +77,8 @@ Corresponding Author Email: If available
 │   ├── filters.py          # Filtering heuristics
 │   └── models.py           # Typed data models
 └── README.md               # This file
-
+```
+        
 
 ## Dependencies
 
